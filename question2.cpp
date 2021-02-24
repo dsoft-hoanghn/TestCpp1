@@ -21,11 +21,11 @@ class NumericInput : public TextInput
 { 
     void add(char c)
     {
-        if(((c >= 'A') &&(c<='Z'))||((c >= 'a') &&(c<='z')));
-        else
+        if(isdigit(c)) // isdigit funtion: check if character is decimal digit
         {
             CurrentValue += c;
         }
+       
     }
 };
 

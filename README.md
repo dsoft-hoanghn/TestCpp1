@@ -6,10 +6,11 @@ Implement the unique names method. When passed two vectors of names, It will ret
 For example, calling unique names{std:vector<std:string "Ava", "Emma", Olivia"}, std::vector std:string ("Olivia", "Sophia "Emma)) should return a vector containing Ava, Emma Olivia, and Sophia in any order.
 
 ## Solution
-Creates a result vector containing the output names in one or both vectors.
+- Creates a result vector containing the output names in one or both vectors.
 - Put the first vector elements into the result vector
 - useing 2 nested loops, traverse 2 vector elements to check if the name element in two vectors is the same, if the same is ignored.
 - Put the rest of the elements in the result vector.
+## Installation
 Int the terminal of your linux
 - Check if your operating system has built-in gcc or g ++ compiler with the command:
 ```sh

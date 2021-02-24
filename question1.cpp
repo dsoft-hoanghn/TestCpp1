@@ -1,33 +1,23 @@
 #include <iostream>
 #include <vector>
+#include<set>
+
+void AddElement(std:: set <std::string> &name, std::vector<std::string> InputVector)
+{
+    for(auto element : InputVector)
+    {
+        name.insert(element);
+    }
+}
 
 int main()
 {
     std::vector<std::string> names1 = {"Ava", "Emma", "Olivia"};
     std::vector<std::string> names2 = {"Olivia", "Sophia", "Emma"};
-    std::vector<std::string> result = names1;
+    std :: set<std::string> result;
+    AddElement(result,names1);
+    AddElement(result,names2);
 
-    bool Check = false;
-
-    
-    for (auto element1 : names2)
-    {
-        for( auto element2 : result)
-        {
-            if(element1 == element2)
-            {
-                Check = true;
-                break;
-            }
-        }
-        if(Check == false)
-        {
-            result.push_back(element1);
-        }
-        Check = false;
-    }
-
-    // Print all element in result vector
     for(auto element : result)
     {
         std::cout << element << ' '; // should print Ava Emma Olivia Sophia
